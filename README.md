@@ -6,6 +6,8 @@ Ogni cartella di esercizi contiene il codice necessario scritto in C++, compilab
 
 Per gli esercizi dove è necessario fasi diverse di uno stesso sistema (esercitazione 4, 7,..) sono presenti delle ulteriori sottocartelle dove sono presenti i file corrispondenti alle diverse fasi.
 
-La cartella dell'esercitazione contiene il Jupyter Notebook in cui sono riportati e commentati i risultati dei diversi esercizi dell'esercitazione
+La cartella di ogni esercitazione contiene il Jupyter Notebook in cui sono riportati e commentati i risultati dei diversi esercizi dell'esercitazione.
+
+Si sconsiglia di eseguire i codici C++ e Python dell'esercitazione 7 perchè il grande numero di dati rende l'esecuzione molto lenta.
 
 Alessandro Muzi Falconi
