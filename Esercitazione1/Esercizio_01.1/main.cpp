@@ -71,11 +71,13 @@ int main (int argc, char *argv[]){
 	Mean_results.close();
 	Stdev_results.close();
 	cout << "Estimation of the epectation value and variance done, Xi2 starting..." << endl;
+	
+	
 	//Compute Xi2	   	
    	for (int i = 0; i<m; i++)	//Initialize the counters to 0
    		count[i] = 0;
-   		
-   	for (int k = 0; k < N; k++) { 			//Cycle over blocks
+   	
+   	for (int k = 0; k < N; k++) { 			//Cycle over blocks = repetitions of the calculation of the Xi2
    		for (int j = 0; j < m; j++) { 		//Cycle over the sub-intervals j
    			counter = 0; 					//Initialize the counter for the considered sub-interval to 0
    			for (int i = 0; i < n; i++) { 	//Generate n pseudo random numbers
@@ -106,7 +108,7 @@ int main (int argc, char *argv[]){
 		sum_prog[i] = sum_prog[i]/(i+1);
 		sum2_prog[i] = sum2_prog[i]/(i+1);	
 		err_prog[i] = error(sum_prog, sum2_prog, i);
-		Xi2_results << sum_prog [i] << "\t" << err_prog[i] << endl; 	//Write results on a file
+		Xi2_results << sum_prog [i] << "\t" << err_prog[i] << "\t" << Xi2_block[i] << endl; 	//Write results on a file
 	}	  	
 	 	  
    	Xi2_results.close();
